@@ -1,0 +1,8 @@
+D:\Workspaces\AndroidstudioProjects\ISTE\app\build\intermediates\classes\debug
+D:\Workspaces\AndroidstudioProjects\ISTE\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-58c59a22494a7c373829e5b4507687ef240de481.jar
+D:\Workspaces\AndroidstudioProjects\ISTE\app\build\intermediates\pre-dexed\debug\classes-9015835b1e61e69764309982bb9209eddf153590.jar
+D:\Workspaces\AndroidstudioProjects\ISTE\app\build\intermediates\pre-dexed\debug\volley-6fa40fd4c064ff4df63b02dc01fa49f2af904f61.jar
+D:\Workspaces\AndroidstudioProjects\ISTE\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-da62661b13081ef247d35c44153b8acaec7cffe5.jar
+D:\Workspaces\AndroidstudioProjects\ISTE\app\build\intermediates\pre-dexed\debug\classes-8c02ec8d2d1318fc1338c1a5e94dde01ab81a631.jar
+D:\Workspaces\AndroidstudioProjects\ISTE\app\build\intermediates\pre-dexed\debug\classes-0a4d90eeb6c5771e0ef69ae7bb881348de4494dc.jar
+D:\Workspaces\AndroidstudioProjects\ISTE\app\build\intermediates\pre-dexed\debug\classes-5902c278288c237d75e879d25b0a3cb4fc662165.jar

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="names">
+        <item>Dr. Ketan Kotecha</item>
+        <item>Prof. Deepika Shukla</item>
+        <item>Tejanshu Salaria</item>
+        <item>Dhruv Shah</item>
+        <item>Swapnil Prajapati</item>
+        <item>Chintan Parikh</item>
+        <item>Smit Doshi</item>
+        <item>Anshu Shah</item>
+        <item>Srishti Bhuvania</item>
+        <item>Raj Thakkar</item>
+        <item>C Hasika</item>
+        <item>Mohak Patel</item>
+        <item>Surbhi Ora</item>
+        <item>Dhruvil Shah</item>
+        <item>Taniya Gupta</item>
+        <item>Kratika Jain</item>
+        <item>Vishal Shah</item>
+        <item>Preksha Pattani</item>
+        <item>Vivek Kumar</item>
+        <item>Kinjal Shah</item>
+        <item>Hardik Panchal</item>
+        <item>Piyush Bishnoi</item>
+        <item>Darshan Gokalgandhi</item>
+        <item>Shreya Chandra</item>
+        <item>Pratik Mantri</item>
+        <item>Dinky Patel</item>
+        <item>Binal Dutt</item>
+        <item>Abha Sanghvi</item>
+        <item>Aditi Srivastav</item>
+        <item>Vasu Tayal</item>
+        <item>Shubham Kamdar</item>
+        <item>Aditi Pathak</item>
+        <item>Aditya Bodi</item>
+        <item>C Archana</item>
+        <item>Ankit Sojitra</item>
+        <item>Divyanshu Surawat</item>
+        <item>Raunak Jagetiya</item>
+        <item>Yash Mehta</item>
+    </string-array>
+    <string-array name="post">
+        <item>Faculty Advisor</item>
+        <item>Faculty Coordinator</item>
+        <item>President</item>
+        <item>Vice-President</item>
+        <item>General Secretary</item>
+        <item>Joint Secretary</item>
+        <item>Joint Secretary</item>
+        <item>Managing Director</item>
+        <item>Managing Director</item>
+        <item>Treasurer</item>
+        <item>Treasurer</item>
+        <item>Administrative Head</item>
+        <item>Administrative Head</item>
+        <item>Cultural Head</item>
+        <item>Cultural Head</item>
+        <item>Editor</item>
+        <item>Executive Head</item>
+        <item>Executive Head</item>
+        <item>Human Resources Head</item>
+        <item>Human Resources Head</item>
+        <item>Logistics Head</item>
+        <item>Logistics Head</item>
+        <item>Operational Head</item>
+        <item>Marketing Head</item>
+        <item>Organising Head</item>
+        <item>Organising Head</item>
+        <item>PRO</item>
+        <item>Socio-Cultural Head</item>
+        <item>SpokesPerson</item>
+        <item>Technical Head</item>
+        <item>Technical Head</item>
+        <item>Cultural Coordinator</item>
+        <item>Cultural Coordinator</item>
+        <item>Cultural Coordinator</item>
+        <item>Technical Coordinator</item>
+        <item>Technical Coordinator</item>
+        <item>Technical Coordinator</item>
+        <item>Technical Coordinator</item>
+    </string-array>
+</resources>

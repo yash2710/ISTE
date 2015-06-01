@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!--<TextView-->
+    <!--android:id="@+id/textevent1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:text="Event Name"-->
+    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--android:textSize="25dp" />-->
+
+    <ImageView
+        android:id="@+id/imageevent"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:src="@drawable/arclightz" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/textevent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:layout_below="@id/textevent"
+                android:id="@+id/imageevent2"
+                android:layout_width="fill_parent"
+                android:layout_height="240dp"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:src="@drawable/arclightz" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
