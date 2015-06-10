@@ -11,6 +11,7 @@ import android.content.res.TypedArray;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.iste.itnu.adapter.NavDrawerListAdapter;
 import com.iste.itnu.model.NavDrawerItem;
@@ -102,17 +104,17 @@ public class MainActivity extends AppCompatActivity {
                 .getResourceId(5, -1)));
         // Communities, Will add a counter here
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[6], navMenuIcons
-                .getResourceId(6, -1), true, Integer.toString(getResources().getStringArray(R.array.names).length)));
+                .getResourceId(6, -1)));
         // Pages
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], navMenuIcons
                 .getResourceId(7, -1)));
         // What's hot, We will add a counter here
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[8], navMenuIcons
-                .getResourceId(8, -1), true, "50+"));
+                .getResourceId(8, -1)));
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[9], navMenuIcons
                 .getResourceId(9, -1)));
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[10], navMenuIcons
-                .getResourceId(10, -1), true, "10"));
+                .getResourceId(10, -1)));
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[11], navMenuIcons
                 .getResourceId(11, -1)));
 
@@ -153,6 +155,36 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             // on first time display view for first nav item
             displayView(0);
+        }
+    }
+
+    Boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        int count = getFragmentManager().getBackStackEntryCount();
+        if(count == 1) {
+            if (doubleBackToExitPressedOnce) {
+                super.onBackPressed();
+                return;
+            }
+
+            this.doubleBackToExitPressedOnce = true;
+            Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+            new Handler().postDelayed(new Runnable() {
+
+                @Override
+                public void run() {
+                    doubleBackToExitPressedOnce = false;
+                }
+            }, 2000);
+        }
+        else if (mDrawerLayout.isDrawerOpen(mDrawerList)) {
+            mDrawerLayout.closeDrawer(mDrawerList);
+        } else {
+            getFragmentManager().popBackStack();
+
         }
     }
 
@@ -233,12 +265,11 @@ public class MainActivity extends AppCompatActivity {
         if (fragment != null) {
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.beginTransaction()
-                    .replace(R.id.frame_container, fragment).commit();
-
+                    .replace(R.id.frame_container, fragment).addToBackStack(navMenuTitles[position]).commit();
             // update selected item and title, then close the drawer
             mDrawerList.setItemChecked(position, true);
             mDrawerList.setSelection(position);
-            setTitle(navMenuTitles[position]);
+//            setTitle(navMenuTitles[position]);
             mDrawerLayout.closeDrawer(mDrawerList);
         } else {
             // error in creating fragment

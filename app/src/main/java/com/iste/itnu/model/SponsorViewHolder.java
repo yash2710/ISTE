@@ -19,7 +19,7 @@ public class SponsorViewHolder extends RecyclerView.ViewHolder {
     public Typeface tf;
     public SponsorViewHolder(View itemView) {
         super(itemView);
-        cv = (CardView) itemView.findViewById(R.id.cv);
+//        cv = (CardView) itemView.findViewById(R.id.cv);
         thumbNail = (NetworkImageView) itemView.findViewById(R.id.thumbnail);
         title = (TextView) itemView.findViewById(R.id.title);
         tf = Typeface.createFromAsset(itemView.getContext().getAssets(), "Roboto-Bold.ttf");

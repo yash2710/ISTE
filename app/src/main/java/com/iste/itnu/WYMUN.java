@@ -31,7 +31,7 @@ public class WYMUN extends Fragment {
         TextView t = (TextView) getView().findViewById(R.id.textevent);
 
 
-        getActivity().setTitle("WYMUN");
+//        getActivity().setTitle("WYMUN");
         i.setImageResource(R.drawable.b13);
         t.setText("Model United Nations (also Model UN or MUN) is an academic simulation of the " +
                 "United Nations that aims to educate participants about current events, topics in " +

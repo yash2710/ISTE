@@ -29,7 +29,7 @@ public class Ifest extends Fragment {
         TextView t = (TextView) getView().findViewById(R.id.textevent);
 
 
-        getActivity().setTitle("I FEST");
+//        getActivity().setTitle("I FEST");
         i.setImageResource(R.drawable.ifest);
         t.setText("\"Be thou the rainbow in the storms of life.\n" +
                 "And when it rains on your parade look up rather than down\"\n" +

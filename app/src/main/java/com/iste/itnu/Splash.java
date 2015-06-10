@@ -22,27 +22,31 @@ public class Splash extends Activity {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
-        view = (ImageView) findViewById(R.id.imageAnimation);
+        try {
+            view = (ImageView) findViewById(R.id.imageAnimation);
 
-        // Setting animation_list.xml as the background of the image view
-        view.setBackgroundResource(R.drawable.animation_list);
+            // Setting animation_list.xml as the background of the image view
+//            view.setBackgroundResource(R.drawable.animation_list);
 
-        // Typecasting the Animation Drawable
-        frameAnimation = (AnimationDrawable) view.getBackground();
-        Thread timer = new Thread() {
-            public void run() {
-                try {
-                    sleep(1400);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } finally {
-                    Intent opennext = new Intent(Splash.this, MainActivity.class);
-                    startActivity(opennext);
+            // Typecasting the Animation Drawable
+            frameAnimation = (AnimationDrawable) view.getBackground();
+            Thread timer = new Thread() {
+                public void run() {
+                    try {
+                        sleep(1400);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    } finally {
+                        Intent opennext = new Intent(Splash.this, MainActivity.class);
+                        startActivity(opennext);
+                    }
+
                 }
+            };
+            timer.start();
+        }catch(Exception e){
 
-            }
-        };
-        timer.start();
+        }
     }
 
     @Override

@@ -33,8 +33,8 @@ public class Gallery {
 //        this.thumbnailUrl = thumbnailUrl;
 //    }
 
-    public int getYear() {
-        return year;
+    public String getYear() {
+        return String.valueOf(year);
     }
 
 //    public void setYear(int year) {

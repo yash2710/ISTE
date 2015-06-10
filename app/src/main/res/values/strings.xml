@@ -13,7 +13,7 @@
         <item>About ISTE</item>
         <item>I Fest</item>
         <item>EDM</item>
-        <item>Laxman</item>
+        <item>VVS Laxman</item>
         <item>WYMUN</item>
         <item>Current Board</item>
         <item>Events</item>
@@ -42,5 +42,9 @@
 
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
+
+    <string name="title_activity_gallery">Gallery</string>
+    <string name="dummy_button">like</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>

@@ -33,7 +33,7 @@ public class EDM extends Fragment {
         TextView t = (TextView) getView().findViewById(R.id.textevent);
 
 
-        getActivity().setTitle("EDM");
+//        getActivity().setTitle("EDM");
         i.setImageResource(R.drawable.edm1);
         i2.setImageResource(R.drawable.edm2);
         t.setText("Electronic Dance Music night.. a one of its kind event .. slowly and gradually " +

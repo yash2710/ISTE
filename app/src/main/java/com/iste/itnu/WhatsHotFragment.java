@@ -2,6 +2,7 @@ package com.iste.itnu;
 
 import android.app.Fragment;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
@@ -35,6 +36,7 @@ public class WhatsHotFragment extends Fragment implements ClickListener{
     private List<Gallery> movieList = new ArrayList<Gallery>();
     private RecyclerView listView;
     private CustomListAdapter adapter;
+    JSONArray responseGot;
 
     public WhatsHotFragment() {
     }
@@ -74,6 +76,7 @@ public class WhatsHotFragment extends Fragment implements ClickListener{
                         Log.d(TAG, response.toString());
                         hidePDialog();
 
+                        responseGot = response;
                         // Parsing json
                         for (int i = 0; i < response.length(); i++) {
                             try {
@@ -116,7 +119,10 @@ public class WhatsHotFragment extends Fragment implements ClickListener{
 
     @Override
     public void onClick(View view, int position) {
-
+        Intent i = new Intent(getActivity(), com.iste.itnu.GalleryActivity.class);
+        i.putExtra("id",position);
+        i.putExtra("array",responseGot.toString());
+        startActivity(i);
     }
 
 }

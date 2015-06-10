@@ -54,8 +54,8 @@ public class CustomListAdapter extends RecyclerView.Adapter<GalleryViewHolder> {
     @Override
     public void onBindViewHolder(GalleryViewHolder holder, int position) {
         Gallery g = movieItems.get(position);
-        holder.title.setText(g.getTitle());
-        holder.year.setText(Integer.toString(g.getYear()));
+//        holder.title.setText(g.getTitle());
+//        holder.year.setText(Integer.toString(g.getYear()));
         holder.imageView.setImageUrl(g.getThumbnailUrl(),imageLoader);
     }
 }

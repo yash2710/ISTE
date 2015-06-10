@@ -19,11 +19,11 @@ public class GalleryViewHolder extends RecyclerView.ViewHolder {
 
     public GalleryViewHolder(View itemView) {
         super(itemView);
-        title = (TextView) itemView.findViewById(R.id.title);
-        year = (TextView) itemView.findViewById(R.id.year);
-        tf = Typeface.createFromAsset(itemView.getContext().getAssets(), "Roboto-Bold.ttf");
-        title.setTypeface(tf);
-        year.setTypeface(tf);
+        //title = (TextView) itemView.findViewById(R.id.title);
+//        year = (TextView) itemView.findViewById(R.id.year);
+//        tf = Typeface.createFromAsset(itemView.getContext().getAssets(), "Roboto-Bold.ttf");
+//        title.setTypeface(tf);
+//        year.setTypeface(tf);
         imageView = (NetworkImageView) itemView.findViewById(R.id.thumbnail);
     }
 }
