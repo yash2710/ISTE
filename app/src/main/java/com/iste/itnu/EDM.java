@@ -36,9 +36,14 @@ public class EDM extends Fragment {
 //        getActivity().setTitle("EDM");
         i.setImageResource(R.drawable.edm1);
         i2.setImageResource(R.drawable.edm2);
-        t.setText("Electronic Dance Music night.. a one of its kind event .. slowly and gradually " +
-                "booming in the city of Ahmedabad!! ISTE Students' Chapter, ITNU volunteered in the " +
-                "EDM night of INTERNATIONAL TOMORROWLAND DJ - DJ TERI MIKO !!! The night enthralled " +
-                "the people and everyone was left asking for more!!!");
+        t.setText("Today DJ TERI MIKO's tour diary continues to be full with performances all " +
+                "around the globe, spinning at world’s most exclusive VIP Nightclubs, Festivals " +
+                "and playing for the finest dance music brands. And ISTE organized An EDM " +
+                "NIGHT, in which we had world famous DJ- DJ TERI MIKO for the first time in " +
+                "Ahmedabad, that too free of cost!! Her onstage performance with hard hitting " +
+                "electronic sounds, with shifting tempos and genres made every performance a " +
+                "testament to her passion & talent. The nail-biting success of the LED NIGHT " +
+                "marked the grand end of I-FEST 14’and the 3-day annual techno-cultural fest of " +
+                "ISTE gracefully came to a close.");
     }
 }

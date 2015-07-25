@@ -13,8 +13,8 @@ import android.widget.ListView;
 public class EventFragment extends Fragment {
 
     ListView list;
-    String[] names = {"CineFreaks", "Freshers Frenzy", "Incendio", "Lecture Series"};
-    Integer[] pics = {R.drawable.b1, R.drawable.b2, R.drawable.b4, R.drawable.b5};
+    String[] names = {"CineFreaks", "Freshers Frenzy", "Incendio", "Lecture Series", "Koshish"};
+    Integer[] pics = {R.drawable.b1, R.drawable.b2, R.drawable.b4, R.drawable.b5, R.drawable.b6};
     public EventFragment() {
     }
 

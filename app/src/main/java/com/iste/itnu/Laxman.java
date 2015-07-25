@@ -33,8 +33,16 @@ public class Laxman extends Fragment {
 
 //        getActivity().setTitle("Laxman");
         i.setImageResource(R.drawable.laxman);
-        t.setText("Epic moments in the history of Nirma University wherein, for the first time ever, a cricketer, and that too none other than the legendary cricketer VVS Laxman was here amidst us, for the launch of the biggest techno-cultural fest ‘IFEST 2K14’, that Ahmedabad will witness from 15th to 17th October, 2014!! With the flawless speech of Laxman working it's way on his huge fan following, the audience was literally spellbound once he started speaking.\n" +
-                "ISTE Students’ Chapter ITNU has yet again done their bit towards giving back to the society by providing the perfect platform to raise money for the underprivilegedkids’ education in such a star studded event. The CEOs of the various top notch MNCs of Ahmedabad offered to adopt a fixed number of schools wherein all the expenses incurred in the education of the children would be borne by their respective firms. The event not only aimed to create social " +
-                "awareness but also helped one and all present, to imbibe life’s greatest lessons from VVS Laxman’s motivational talk and also served as the umbrella event for the launch of the biggest upcoming techno-cultural fest – IFEST 2K14");
+        t.setText("On the 10th of October, epic moments in the history of Nirma University were written " +
+                "wherein, for the first time ever, a cricketer, and that too none other than the legendary " +
+                "cricketer VVS Laxman was here amidst us, for the launch of the biggest techno-cultural fest " +
+                "‘IFEST 2K14’, that Ahmedabad witnessed from 15th to 17th October, 2014!! With the flawless " +
+                "speech of Laxman working it's way on his huge fan following, the audience was literally " +
+                "spellbound once he started speaking.  He, in his pep talk, motivated the audience toward " +
+                "the need to socialize, the need for social work required in our budding nation. " +
+                "\n\t The event not only aimed to create social awareness but also helped one and all " +
+                "present, to imbibe life’s greatest lessons from VVS Laxman’s motivational talk and also " +
+                "served as the umbrella event for the launch of the biggest upcoming techno-cultural fest – " +
+                "IFEST 2K14.");
     }
 }

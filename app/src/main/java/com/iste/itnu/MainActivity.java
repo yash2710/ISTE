@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
-
+    boolean other = false;
     // nav drawer title
     private CharSequence mDrawerTitle;
 
@@ -162,8 +162,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        int count = getFragmentManager().getBackStackEntryCount();
-        if(count == 1) {
+        if(!other) {
             if (doubleBackToExitPressedOnce) {
                 super.onBackPressed();
                 return;
@@ -183,8 +182,8 @@ public class MainActivity extends AppCompatActivity {
         else if (mDrawerLayout.isDrawerOpen(mDrawerList)) {
             mDrawerLayout.closeDrawer(mDrawerList);
         } else {
-            getFragmentManager().popBackStack();
-
+            displayView(0);
+            other=false;
         }
     }
 
@@ -221,6 +220,8 @@ public class MainActivity extends AppCompatActivity {
     private void displayView(int position) {
         // update the main content by replacing fragments
         Fragment fragment = null;
+        if(position != 0)
+            other = true;
         switch (position) {
             case 0:
                 fragment = new home();
@@ -265,7 +266,7 @@ public class MainActivity extends AppCompatActivity {
         if (fragment != null) {
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.beginTransaction()
-                    .replace(R.id.frame_container, fragment).addToBackStack(navMenuTitles[position]).commit();
+                    .replace(R.id.frame_container, fragment).commit();
             // update selected item and title, then close the drawer
             mDrawerList.setItemChecked(position, true);
             mDrawerList.setSelection(position);

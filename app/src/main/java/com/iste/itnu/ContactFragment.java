@@ -63,7 +63,7 @@ public class ContactFragment extends Fragment implements OnClickListener {
         try {
             startActivity(Intent.createChooser(emailIntent, "Send email using..."));
         } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(getActivity().getApplicationContext(), "No email clients installed.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplicationContext(), "No email clients installed", Toast.LENGTH_SHORT).show();
         }
     }
 

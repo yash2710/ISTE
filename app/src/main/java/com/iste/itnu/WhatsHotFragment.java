@@ -96,6 +96,7 @@ public class WhatsHotFragment extends Fragment implements ClickListener{
                         // notifying list adapter about data changes
                         // so that it renders the list view with updated data
                         adapter.setList(movieList);
+                        adapter.notifyDataSetChanged();
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -105,6 +106,7 @@ public class WhatsHotFragment extends Fragment implements ClickListener{
 
             }
         });
+
 
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(movieReq);

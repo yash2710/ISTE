@@ -26,7 +26,12 @@ public class Splash extends Activity {
             view = (ImageView) findViewById(R.id.imageAnimation);
 
             // Setting animation_list.xml as the background of the image view
-//            view.setBackgroundResource(R.drawable.animation_list);
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    view.setBackgroundResource(R.drawable.animation_list);
+                }
+            });
 
             // Typecasting the Animation Drawable
             frameAnimation = (AnimationDrawable) view.getBackground();
@@ -34,7 +39,7 @@ public class Splash extends Activity {
                 public void run() {
                     try {
                         sleep(1400);
-                    } catch (InterruptedException e) {
+                    } catch (Exception e) {
                         e.printStackTrace();
                     } finally {
                         Intent opennext = new Intent(Splash.this, MainActivity.class);

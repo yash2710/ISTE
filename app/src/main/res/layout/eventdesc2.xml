@@ -12,15 +12,7 @@
     <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
     <!--android:textSize="25dp" />-->
 
-    <ImageView
-        android:id="@+id/imageevent"
-        android:layout_width="fill_parent"
-        android:layout_height="240dp"
-        android:paddingBottom="0dp"
-        android:paddingLeft="0dp"
-        android:paddingRight="0dp"
-        android:paddingTop="0dp"
-        android:src="@drawable/arclightz" />
+
 
     <ScrollView
         android:id="@+id/scroll"
@@ -33,10 +25,17 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
 
+            <ImageView
+                android:id="@+id/imageevent"
+                android:layout_width="fill_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/arclightz" />
+
             <TextView
+                android:layout_below="@id/imageevent"
                 android:id="@+id/textevent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Medium Text"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -45,10 +44,6 @@
                 android:id="@+id/imageevent2"
                 android:layout_width="fill_parent"
                 android:layout_height="240dp"
-                android:paddingBottom="0dp"
-                android:paddingLeft="0dp"
-                android:paddingRight="0dp"
-                android:paddingTop="0dp"
                 android:src="@drawable/arclightz" />
         </RelativeLayout>
     </ScrollView>

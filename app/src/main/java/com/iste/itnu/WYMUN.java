@@ -33,19 +33,17 @@ public class WYMUN extends Fragment {
 
 //        getActivity().setTitle("WYMUN");
         i.setImageResource(R.drawable.b13);
-        t.setText("Model United Nations (also Model UN or MUN) is an academic simulation of the " +
-                "United Nations that aims to educate participants about current events, topics in " +
-                "international relations, diplomacy and the United Nations agenda. The participants " +
-                "role-play as diplomats representing a nation or NGO in a simulated session of an " +
-                "organ (committee) of the United Nations, such as the Security Council or the General " +
-                "Assembly. Participants research a country, take on roles as diplomats, investigate " +
-                "international issues, debate, deliberate, consult, and then develop solutions to " +
-                "world problems.\n\nThe World Youth Model United Nations (WYMUN) is an attempt to " +
-                "create an inclusive youth participation platform, for a 1000+ delegates, that " +
-                "enables them to discuss ideas and share opinions and innovative approaches for " +
-                "effectively contributing to various world affairs.\n\nThe biggest and best event on" +
-                " nirmaland.. WYMUN proved to be the biggest MUN in Gujarat and biggest in the world" +
-                " in terms of international partnerships with 14 international partners!!! ISTE " +
-                "being a part of this event is proud to help the people cultivate academic simulation.");
+        t.setText("For the first time ever, in the history of Nirma, Asia’s Largest Model UN Conference- WORLD" +
+                "YOUTH MUN (WYMUN) was organised in the university campus by ISTE in collaboration " +
+                "with Youthemism & Young Leader’s Consortium (YLC). The two day event saw numerous " +
+                "national and international delegates thronging the campus and addressing current world " +
+                "issues related to regional conflicts, peacekeeping, human rights, women and children, " +
+                "economic and social development, environment etc. The event ended with delegates " +
+                "reflecting their day on themselves through their communication skills." +
+                "With more than 40 international collaborations backing the organisation of the event, " +
+                "\nWYMUN turned out to be a prestigious learning experience for both, the participants as well " +
+                "as the organisers and is another feather in the cap of ISTE which has yet again proven its " +
+                "mettle  by organising such an esteemed and large-scale event, successfully, in the university " +
+                "campus.");
     }
 }
